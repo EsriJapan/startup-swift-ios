@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96811DF61BABC98500DDD914 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96811DF51BABC98500DDD914 /* ArcGIS.bundle */; settings = {ASSET_TAGS = (); }; };
 		96E06A391B218C3F008B24F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E06A381B218C3F008B24F7 /* AppDelegate.swift */; };
 		96E06A3B1B218C3F008B24F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E06A3A1B218C3F008B24F7 /* ViewController.swift */; };
 		96E06A3E1B218C3F008B24F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E06A3C1B218C3F008B24F7 /* Main.storyboard */; };
 		96E06A431B218C3F008B24F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E06A411B218C3F008B24F7 /* LaunchScreen.xib */; };
-		96E06A591B218E47008B24F7 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96E06A581B218E47008B24F7 /* ArcGIS.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96811DF51BABC98500DDD914 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = ../../../../../../Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<group>"; };
 		96E06A331B218C3F008B24F7 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E06A371B218C3F008B24F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E06A381B218C3F008B24F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E06A3A1B218C3F008B24F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96E06A3D1B218C3F008B24F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96E06A421B218C3F008B24F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		96E06A581B218E47008B24F7 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = ../../../../Desktop/esri/ArcGIS.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 		96E06A2A1B218C3F008B24F7 = {
 			isa = PBXGroup;
 			children = (
-				96E06A581B218E47008B24F7 /* ArcGIS.bundle */,
+				96811DF51BABC98500DDD914 /* ArcGIS.bundle */,
 				96E06A351B218C3F008B24F7 /* sample */,
 				96E06A341B218C3F008B24F7 /* Products */,
 			);
@@ -98,7 +98,8 @@
 		96E06A2B1B218C3F008B24F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = esrij;
 				TargetAttributes = {
 					96E06A321B218C3F008B24F7 = {
@@ -129,9 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96811DF61BABC98500DDD914 /* ArcGIS.bundle in Resources */,
 				96E06A3E1B218C3F008B24F7 /* Main.storyboard in Resources */,
 				96E06A431B218C3F008B24F7 /* LaunchScreen.xib in Resources */,
-				96E06A591B218E47008B24F7 /* ArcGIS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +191,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -265,6 +267,7 @@
 					"-l",
 					"c++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "esrij.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -282,6 +285,7 @@
 					"-l",
 					"c++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "esrij.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
