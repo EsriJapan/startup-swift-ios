@@ -22,7 +22,7 @@ class ViewController: UIViewController, AGSMapViewLayerDelegate {
         self.mapView.addMapLayer(tiledLayer, withName:"Tiled Layer")
         
         //主題図の追加
-        let dynamicLayer = AGSDynamicMapServiceLayer(URL: NSURL(string:"http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StateCityHighway_USA/MapServer"))
+        let dynamicLayer = AGSDynamicMapServiceLayer(URL: NSURL(string:"https://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StateCityHighway_USA/MapServer"))
         //レイヤの表示設定
         dynamicLayer.visibleLayers = [2]
         self.mapView.addMapLayer(dynamicLayer, withName:"Dynamic Layer")
