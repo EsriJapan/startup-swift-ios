@@ -1,5 +1,19 @@
 # startup-swift-ios
 
+:warning: **サポート終了のお知らせ** :warning:
+
+こちらのリポジトリで使用しているSDKのバージョンはサポート終了しました。今後のアップデートや修正は行われませんのでご注意ください。利用する際には自己責任でお願いいたします。
+
+下記のガイドをご覧いただければと思います。最新バージョンでは、SwiftUIの対応などSwiftファーストのSDKとして更新されています。
+
+* [スタートアップガイド](https://esrijapan.github.io/arcgis-dev-resources/guide/create-app/create-startup-app-ios/)
+
+* [インストールガイド](https://esrijapan.github.io/arcgis-dev-resources/tips/ios/install-ios-200.x/)
+
+* [サンプルコード](https://developers.arcgis.com/swift/sample-code/)
+
+---
+
 ESRIジャパン製品ページで公開している「ArcGIS Runtime SDK for iOS スタートアップ ガイド」で Objective-C を使用して作成するサンプル プロジェクトの Swift 版です。
 背景地図の上に主題図を追加する基本的なサンプルです。ソースコードの内容は「[スタートアップ ガイド](http://www.esrij.com/cgi-bin/wp/wp-content/uploads/documents/startup-ios-v1024.pdf)」で解説しています。
 ![.iOS SDK サンプルアプリケーション](_readme_images/thumbnail.png)
